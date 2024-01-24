@@ -1,0 +1,11 @@
+.profileDp{
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

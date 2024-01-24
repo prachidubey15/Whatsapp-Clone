@@ -1,0 +1,18 @@
+.searchBarWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22.3rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    background-color: var(--openmsg);
+    input{
+        padding: 0.1rem 0;
+        color: var(--iconColor);
+        background-color: transparent;
+        font-size: 0.95rem;
+        border: none;
+        outline: none;
+        width: 16rem;
+    }
+}

@@ -1,0 +1,59 @@
+.openChatNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--openmsg);
+    padding: 0.5rem 1.6rem .5rem 0.8rem;
+    border-left: 1px solid var(--overlayColor);
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+        h6{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .groupInfo{
+          display: flex;
+          flex-direction: column;
+          .participants{
+            max-width: 46rem;
+            text-overflow: ellipsis;
+            overflow:hidden ;
+            white-space: nowrap;
+            font-size: 0.8rem;
+            color: var(--lighttext);
+            display: inline-block;
+          }
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+        font-size: 1.4rem;
+        color: var(--iconColor);
+        &:nth-child(2){
+            font-size: 1.1rem;
+        }
+        .optionContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .moreBg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+    }
+    }
+  }

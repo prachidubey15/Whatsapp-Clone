@@ -1,0 +1,55 @@
+.logoutOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffffa9;
+  z-index: 99;
+  .logoutDiv {
+    color: var(--lighttext);
+    width: 30rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+    .logoutButtons {
+      display: flex;
+      justify-content: end;
+      gap: 2rem;
+      .logoutBtn {
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0;
+        padding: 0.4rem 0.9rem;
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        font-weight: 400;
+        border-radius: 10rem;
+        background-color: var(--bgGreen);
+        &:hover {
+          background-color: var(--custBtn);
+        }
+      }
+      #cancelBtn {
+        color: var(--bgGreen);
+        background-color: var(--white);
+        border: 1.5px solid var(--openmsg);
+        &:hover {
+          box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.28);
+        }
+      }
+    }
+  }
+}

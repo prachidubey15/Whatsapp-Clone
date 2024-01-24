@@ -1,0 +1,24 @@
+.chatWrapper {
+  display: flex;
+  .chatLeft {
+    height: 100vh;
+    width: 25.7rem;
+    border-right: 1px solid var(--bgWhite);
+    .searchNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.7rem;
+      border-bottom: 0.1rem solid var(--openmsg);
+      width: 100%;
+    }
+  }
+  .chatRight {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    height: 100vh;
+    width: calc(100vw - 25.7rem);
+  }
+}

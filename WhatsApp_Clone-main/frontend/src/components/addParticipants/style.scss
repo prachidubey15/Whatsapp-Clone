@@ -1,0 +1,15 @@
+.addParticipants{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffffd1;
+    .participantsWrapper{
+        width: 25.7rem;
+        background-color: var(--white);
+    }
+}

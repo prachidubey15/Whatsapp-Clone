@@ -1,0 +1,57 @@
+.details {
+  width: 100%;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--white);
+  .title {
+    color: var(--bgGreen);
+    margin-bottom: 1.1rem;
+    h6 {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  }
+  .data {
+    .editMode {
+      display: none; //flex
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.18rem solid var(--bgGreen);
+      //   background-color: seagreen;
+      input {
+        width: 18.8rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        outline: none;
+        border: none;
+      }
+      .icons {
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+        justify-content: center;
+        color: var(--profileIcon);
+        font-size: 1.4rem;
+        :nth-child(1) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .info {
+      display: flex; //flex
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      h6 {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+      }
+      .icons{
+       color: var(--profileIcon);
+        font-size: 1.4rem; 
+      }
+    }
+  }
+}

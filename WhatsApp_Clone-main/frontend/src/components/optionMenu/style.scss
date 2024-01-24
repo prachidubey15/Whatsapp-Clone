@@ -1,0 +1,23 @@
+.contentMenu {
+  // display: block;
+  display: none;
+  padding: 0.4rem 0;
+  box-shadow: -1px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 110%;
+  right: 4%;
+  z-index: 99999999999;
+  width: 12rem;
+  background-color: #fff;
+  border-radius: 5px;
+  .option {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    h5{
+        font-weight: 400;
+    }
+    &:hover {
+      background-color: var(--openmsg);
+    }
+  }
+}

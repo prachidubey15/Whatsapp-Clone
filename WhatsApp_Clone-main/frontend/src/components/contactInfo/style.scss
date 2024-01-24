@@ -1,0 +1,159 @@
+.contactInfo {
+  overflow-y: auto;
+  height: 100vh;
+  width: 25.7rem;
+  background-color: var(--openmsg);
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  .heading {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    padding: 1.19rem 1.6rem 1.19rem 1.6rem;
+    border-left: 1px solid var(--overlayColor);
+    h1 {
+      font-size: 1rem;
+      height: 100%;
+      font-weight: 400;
+    }
+  }
+  .dets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--white);
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 0rem;
+
+    .image {
+      position: relative;
+      cursor: pointer;
+      height: 12rem;
+      width: 12rem;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      .overlay {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--overlayColor);
+        color: #fff;
+        text-align: center;
+        :nth-child(1) {
+          font-size: 1.6rem;
+        }
+        h5 {
+          font-weight: 400;
+        }
+      }
+      &:hover :nth-child(1) {
+        display: flex;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--darkgrey);
+    }
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--lighttext);
+    }
+  }
+  & > .about {
+    padding: 1rem 1.4rem;
+    width: 100%;
+    background-color: var(--white);
+    margin-bottom: 0.5rem;
+    .title {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--lighttext);
+    }
+    .data {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+  .membersList {
+    width: 100%;
+    background-color: var(--white);
+    margin-bottom: 0.5rem;
+    .title {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--lighttext);
+      padding: 0rem 1.4rem;
+    }
+    .addParticipant {
+      cursor: pointer;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      width: 100%;
+      margin-top: 1rem;
+      padding: .5rem 1.4rem;
+      &:hover {
+        background-color: var(--openmsg);
+      }
+      .addIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.2rem;
+        width: 3.2rem;
+        color: var(--white);
+        font-size: 1.5rem;
+        background-color: var(--bgGreen);
+        border-radius: 50%;
+      }
+      h3 {
+        font-weight: 400;
+      }
+    }
+    .members {
+      width: 100%;
+      overflow-y: auto;
+      max-height: 35rem;
+    }
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0 1rem 0;
+    background-color: var(--white);
+    .block {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      width: 100%;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      color: var(--red);
+      cursor: pointer;
+      &:hover {
+        background-color: var(--openmsg);
+      }
+      h3 {
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.top{
+    width:100vw;
+    height:30vh;
+    padding: 1px;
+    background-color: #00a884;
+    .header{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        height:10vh;
+        width: 80vw;
+        gap: .8rem;
+        margin-bottom: .5rem;
+        &>h5{
+            font-weight: 500;
+            color: #fff;
+            font-size: 1rem;
+            line-height: 1;
+            margin: 0;
+        }
+        .logo{
+            height: 2.5rem;
+            width: 2.5rem;
+
+        }
+    }
+}
+.bottom{
+    width: 100vw;
+    height: 70vh;
+    background-color: #f0f2f5;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
